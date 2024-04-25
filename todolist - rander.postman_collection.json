@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "7a1199b0-9966-41bb-9ae5-13ebee7e13a2",
+		"name": "todolist - rander",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34334207"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodekata-todolistapi.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"nodekata-todolistapi",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"明天要去看電影\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodekata-todolistapi.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"nodekata-todolistapi",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodekata-todolistapi.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"nodekata-todolistapi",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodekata-todolistapi.onrender.com/todos/1234",
+					"protocol": "https",
+					"host": [
+						"nodekata-todolistapi",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"更新內容2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodekata-todolistapi.onrender.com/todos/1234",
+					"protocol": "https",
+					"host": [
+						"nodekata-todolistapi",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
